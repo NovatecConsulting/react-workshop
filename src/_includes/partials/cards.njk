@@ -15,9 +15,8 @@
         </header>
         <p>{{ item.data.description }}</p>
         <div class="card__bottom">
-          <a class="button" href="{{ item.url }}">{{ learnMore }} &raquo</a>
+          <a class="button" href="{{ meta.url }}{{ item.url }}">{{ learnMore }} &raquo</a>
         </div>
-        
       </article>
     </li>
   {% endfor %}

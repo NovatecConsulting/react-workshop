@@ -120,4 +120,4 @@ const MyComponent = () => {
 
 ## useContext hook
 
-The `useContext` api helps you to share state across components using the Context API. The context API is described within its own article: [Context API](/context-api).
+The `useContext` api helps you to share state across components using the Context API. The context API is described within its own article: [Context API](context-api).

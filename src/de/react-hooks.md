@@ -120,4 +120,4 @@ const MyComponent = () => {
 
 ## useContext hook
 
-Die "useContext"-Api hilft dabei, einen globalen Anwendungszustand über die Context-API zwischen Komponenten zu teilen. Die Kontext-API wird in einem eigenen Artikel beschrieben: [Die Context API](/die-context-api).
+Die "useContext"-Api hilft dabei, einen globalen Anwendungszustand über die Context-API zwischen Komponenten zu teilen. Die Kontext-API wird in einem eigenen Artikel beschrieben: [Die Context API](die-context-api).
