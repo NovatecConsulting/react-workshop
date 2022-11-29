@@ -9,7 +9,7 @@
     "dev:css": "postcss src/css/index.css --o src/_includes/css/styles.css --watch --verbose",
     "build:css": "postcss src/css/index.css --o src/_includes/css/styles.css",
     "build:html": "eleventy",
-    "build": "cross-env NODE_ENV=production npm run build:css && cross-env NODE_ENV=production npm run build:html",
+    "build": "cross-env NODE_ENV=production npm run build:css && cross-env NODE_ENV=production npm run build:html && touch dist/.nojekyll",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
