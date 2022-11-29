@@ -21,6 +21,7 @@
     "cross-env": "^7.0.3",
     "cssnano": "^5.1.14",
     "dayjs": "^1.11.6",
+    "gh-pages": "^4.0.0",
     "html-minifier": "^4.0.0",
     "postcss": "^8.4.19",
     "postcss-cli": "^10.0.0",
