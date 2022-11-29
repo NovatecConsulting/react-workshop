@@ -15,7 +15,7 @@
     <ul class="side-nav__list flow">
       {% for item in collection %}
         <li class="side-nav__item">
-          <a class="side-nav__link" href="{{ item.url }}" {% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.data.title }}</a>
+          <a class="side-nav__link" href="{{ meta.url }}{{ item.url }}" {% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.data.title }}</a>
         </li>
       {% endfor %}
     </ul>
