@@ -1,0 +1,13 @@
+{% set navItems = nav[meta.lang] %}
+<footer class="footer">
+  <p>{{ meta.copyright | safe }}</p>
+  <nav class="nav">
+    <ul class="nav__list">
+      {% for item in navItems.footer %}
+        <li class="nav__item">
+          <a class="nav__link" href="{{ item.href }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</footer>

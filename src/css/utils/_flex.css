@@ -1,0 +1,15 @@
+.flex {
+  display: flex;
+}
+
+.fld-c {
+  flex-direction: column;
+}
+
+.jc-flex-end {
+  justify-content: flex-end;
+}
+
+.gap-1 {
+  gap: 1rem;
+}

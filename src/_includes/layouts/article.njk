@@ -1,0 +1,24 @@
+{% extends "layouts/base.njk" %}
+
+{% set collection = collections.sortedEnglish %}
+{% if meta.lang === 'de' %}
+  {% set collection = collections.sortedGerman %}
+{% endif %}
+
+{% block content %}
+<main id="main" class="side-nav-layout">
+  <article class="flow">
+    {{ content | safe }}
+  </article>
+  <nav class="side-nav" aria-labelledby="sideNavHeadline">
+    <h2 id="sideNavHeadline" class="visually-hidden">Side navigation</h2>
+    <ul class="side-nav__list flow">
+      {% for item in collection %}
+        <li class="side-nav__item">
+          <a class="side-nav__link" href="{{ item.url }}" {% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.data.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</main>
+{% endblock %}

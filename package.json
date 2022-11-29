@@ -1,0 +1,32 @@
+{
+  "name": "it-tage-react-workshop-course-material",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run build:css && concurrently 'npm:dev:*'",
+    "dev:html": "eleventy --serve",
+    "dev:css": "postcss src/css/index.css --o src/_includes/css/styles.css --watch --verbose",
+    "build:css": "postcss src/css/index.css --o src/_includes/css/styles.css",
+    "build:html": "eleventy",
+    "build": "cross-env NODE_ENV=production npm run build:css && cross-env NODE_ENV=production npm run build:html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0-canary.18",
+    "concurrently": "^7.6.0",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.1.14",
+    "dayjs": "^1.11.6",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^15.0.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0"
+  }
+}

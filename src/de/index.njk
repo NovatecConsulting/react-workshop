@@ -1,0 +1,10 @@
+---
+title: Übersicht
+layout: layouts/base.njk
+eleventyExcludeFromCollections: true
+---
+
+<h1>{{ meta.siteName }} - Übersicht</h1>
+{% set cardCollection = collections.sortedGerman %}
+
+{% include "partials/cards.njk" %}

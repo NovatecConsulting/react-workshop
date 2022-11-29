@@ -1,0 +1,32 @@
+.card {
+  box-shadow: .125rem .125rem .125rem .125rem var(--card-brd);
+  background: var(--card-bg);
+  color: var(--card-fg);
+  border-radius: .25rem;
+  padding: 1rem;
+
+  height: 100%;
+  display: flex;
+  gap: .5rem;
+  flex-direction: column;
+}
+
+.card__header {
+  min-height: 7rem;
+  background-clip: padding-box;
+}
+
+.card h2 {
+  color: var(--card-headline);
+  font-size: var(--step-1);
+}
+
+.card__link {
+  text-decoration: none;
+  color: var(--link-fg);
+}
+
+
+.card__bottom {
+  margin-block-start: auto;
+}

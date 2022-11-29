@@ -1,0 +1,5 @@
+main {
+  width: min(100% - 3rem, var(--container-max, 100ch));
+  margin-inline: auto;
+  flex: 1 0 auto;
+}

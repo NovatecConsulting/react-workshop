@@ -1,0 +1,7 @@
+.visually-hidden {
+  position: absolute;
+  font-size: 1px;
+  clip-path: path('M0 0');
+  width: 0;
+  height: 0;
+}

@@ -1,0 +1,24 @@
+{% set learnMore = "learn more" %}
+{% if meta.lang == 'de' %}
+  {% set learnMore = "mehr"%}
+{% endif %}
+
+<ul class="list-none auto-grid my-4">
+  {% for item in cardCollection %}
+    <li>
+      <article class="card">
+        <header class="card__header">
+          <h2>{{ item.data.title }}</h2>
+          {% if item.data.level %}
+            <div class="chip">{{ item.data.level.replace('-', ' ') }}</div>
+          {% endif %}
+        </header>
+        <p>{{ item.data.description }}</p>
+        <div class="card__bottom">
+          <a class="button" href="{{ item.url }}">{{ learnMore }} &raquo</a>
+        </div>
+        
+      </article>
+    </li>
+  {% endfor %}
+</ul>

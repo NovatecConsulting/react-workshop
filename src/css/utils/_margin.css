@@ -1,0 +1,39 @@
+.my-1 {
+  margin-block-start: .5rem; 
+  margin-block-end: .5rem;
+}
+
+.my-2 {
+  margin-block-start: 1rem; 
+  margin-block-end: 1rem;
+}
+
+.my-3 {
+  margin-block-start: 1.5rem; 
+  margin-block-end: 1.5rem;
+}
+
+.my-4 {
+  margin-block-start: 2rem; 
+  margin-block-end: 2rem;
+}
+
+.my-5 {
+  margin-block-start: 2.5rem; 
+  margin-block-end: 2.5rem;
+}
+
+.my-6 {
+  margin-block-start: 3rem; 
+  margin-block-end: 3rem;
+}
+
+.my-7 {
+  margin-block-start: 3.5rem; 
+  margin-block-end: 3.5rem;
+}
+
+.my-8 {
+  margin-block-start: 4rem; 
+  margin-block-end: 4rem;
+}

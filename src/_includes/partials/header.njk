@@ -1,0 +1,30 @@
+{% set navItems = nav[meta.lang] %}
+
+<header class="header" aria-labelledby="headerHeadline">
+  <div class="header__title">
+    <a href="{{ meta.url }}/" title="{{ meta.siteName}}">
+      {% include "partials/logo.svg" %}
+      <h2 id="headerHeadline" class="visually-hidden">{{ meta.siteName }}</h2>
+    </a>
+  </div>
+  <nav class="nav">
+    <ul class="nav__list">
+      {% for item in navItems.header %}
+        <li class="nav__item"><a class="nav__link" href="{{ meta.url }}{{ item.href }}">{{ item.title }}</a></li>
+      {% endfor %}
+        <li class="nav__item">
+          <a href="{{ meta.url }}/" class="nav__link">
+            {% include "partials/gb.svg" %}
+            <span class="visually-hidden">english</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="{{ meta.url }}/de" class="nav__link">
+            {% include "partials/de.svg" %}
+            <span class="visually-hidden">german</span>
+          </a>
+        </li>
+        
+    </ul>
+  </nav>
+</header>

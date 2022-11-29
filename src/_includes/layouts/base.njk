@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ meta.lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    {% include "css/styles.css" %}
+  </style>
+  {% include "partials/meta-info.njk" %}
+</head>
+<body>
+
+  {% include "partials/header.njk" %}
+  
+  {% block content %}
+  <main id="main" class="flow">{{ content | safe }}</main>
+  {% endblock %}
+  
+  {% include "partials/footer.njk" %}
+</body>
+</html>

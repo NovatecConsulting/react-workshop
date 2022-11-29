@@ -1,0 +1,10 @@
+.rect {
+  background: rgba(128,128,128,.1);
+  border: 1px solid currentColor;
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+.rect > * + * {
+  margin-block-start: .5rem;
+}

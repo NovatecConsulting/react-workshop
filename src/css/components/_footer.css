@@ -1,0 +1,17 @@
+.footer {
+  margin-block-start: 4rem;
+  padding: 2rem;
+  text-align: center;
+  background: #222;
+  color: #fff;
+}
+
+.footer .nav__list {
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.footer *:focus {
+  outline: 2px solid var(--header-fg);
+  outline-offset: 2px;
+}

@@ -1,0 +1,28 @@
+.button {
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  background: var(--button-bg);
+  text-decoration: none;
+  color: var(--button-fg);
+  font-size: var(--step--1);
+  font-family: inherit;
+  padding: .5em .75em;
+  border-radius: .5em;
+}
+
+.button:active {
+  background: var(--button-active-bg);
+  color: var(--button-active-fg);
+}
+
+.button:hover {
+  background: var(--button-hover-bg);
+  color: var(--button-hover-fg);
+  text-decoration: none;
+}
+
+.button:focus {
+  outline: 2px solid var(--fg);
+  outline-offset: 2px;
+}
