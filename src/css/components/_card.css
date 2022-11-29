@@ -7,7 +7,7 @@
 
   height: 100%;
   display: flex;
-  gap: .5rem;
+  gap: .75rem;
   flex-direction: column;
 }
 
@@ -28,5 +28,6 @@
 
 
 .card__bottom {
+  text-align: right;
   margin-block-start: auto;
 }
