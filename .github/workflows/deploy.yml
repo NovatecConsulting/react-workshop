@@ -32,7 +32,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run production a build
-        run: URL="https://NovatecConsulting.github.io/react-workshop" npm run build && touch dist/.nojekyll
+        run: |
+          URL="https://NovatecConsulting.github.io/react-workshop" npm run build
+          touch dist/.nojekyll
       - name: Deploy to GitHub pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
