@@ -22,12 +22,12 @@ const ApplicationForm = () => {
     
       <div className="field">
         <label for="name">Name:</label>
-        <input id="name" value={name} onChange={setName}/>
+        <input id="name" value={name} onChange={(e) => setName(e.target.value)}/>
       </div>
 
       <div className="field">
         <label for="surname">Surname:</label>
-        <input id="surname" value={surName} onChange={setSurName}/>
+        <input id="surname" value={surName} onChange={(e) => setSurName(e.target.value)}/>
       </div>
 
       <button> submit </button>
@@ -41,3 +41,7 @@ const ApplicationForm = () => {
 
 Uncontrolled inputs use the DOM as the single source of truth rather than managing its value via React state.
 This can be helpful when integrating non-React code into React code.
+
+## React Hook Form
+
+A popular third-party library for managing forms and inputs is [React Hook Form](https://react-hook-form.com).
