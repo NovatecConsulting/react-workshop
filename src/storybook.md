@@ -1,7 +1,7 @@
 ---
 title: Storybook
 layout: layouts/article.njk
-description: An introduction to Storybook.
+description: An introduction to Storybook, a tool for building UI components in isolation
 level: advanced
 tags: en
 ---

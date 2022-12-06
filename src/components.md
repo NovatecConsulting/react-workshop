@@ -2,7 +2,7 @@
 title: Components
 layout: layouts/article.njk
 description: Introduction to components in React
-level: intermediate
+level: beginner
 tags: en
 ---
 
