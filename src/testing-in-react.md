@@ -9,9 +9,9 @@ level: intermediate
 
 ## Unit vs Integration vs End-to-End
 
-- Unit tests are for testing an isolated unit of a software projects
-- Integration tests are for testing groups of units and how they work together in a software projects
-- End-to-end tests are involve testing an application's workflow from beginning to end. This method aims to replicate real user scenarios to validate the system for integration and data integrity
+- Unit tests are for testing an isolated unit of a software project
+- Integration tests are for testing groups of units and how they work together in a software project
+- End-to-end tests involve testing an application's workflow from beginning to end. This method aims to replicate real user scenarios to validate the system for integration and data integrity
 
 ## jest
 

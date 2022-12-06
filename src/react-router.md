@@ -16,7 +16,6 @@ npm install react-router-dom
 
 Routes enable conditional rendering of components based on the given location path of your browser.
 
-I
 Usage example in the entry point:
 ```jsx
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -46,6 +45,26 @@ root.render(
 );
 ```
 
+This example features different kinds of routes
+- The `<StartPage />` is rendered on the `/` location
+- The `<NotificationsPage />` is rendered on the `/notifications` location
+- The `<ProfilePage />` page is rendered on any `/profile/:name` location with parameter `:name`.
+- The `<GroupsPage />` is rendered on any route under the `/groups/` location, including subfolders. The `<GroupsPage />` can further contain nested `<Routes />`.
+
+## Using parameters on pages
+
+Parameters can be retrieved via the `useParams()` hook:
+
+```js
+const { name } = useParams();
+```
+
+In TypeScript, you can additionally specify the type of the params object via generics:
+
+```ts
+const { name } = useParams<{ name?: string }>();
+```
+
 ## Linking to other pages
 
 ```jsx
@@ -61,7 +80,7 @@ const NotificationsPage = () => (
 );
 ```
 
-Link components are rendered as `<a href="...">` tags and can be styled by styling the a tag in global styles, or adding a css `className` property or using styled components (`styled.Link`).
+These `<Link />` components are rendered as `<a href="...">` tags and can be styled by styling the a tag in global styles, or adding a css `className` property or using styled components (`styled.Link`).
 
 ## Programmatic Redirect
 
@@ -77,3 +96,4 @@ const NotFoundPage = () => {
     </article>
   );
 }
+```

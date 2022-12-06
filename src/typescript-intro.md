@@ -10,8 +10,10 @@ level: get-started
 
 This is a quick summary of the TypeScript language for people familiar with JavaScript.
 
-For an in-depth tutorial on TypeScript and its Type Notation, visit 
+For an in-depth tutorial on TypeScript and its Type Notation, visit:
 [https://2ality.com/2018/04/type-notation-typescript.html](https://2ality.com/2018/04/type-notation-typescript.html)
+
+Also, check the official documentation: [https://www.typescriptlang.org/](https://www.typescriptlang.org/)
 
 ## TypeScript Playground
 
@@ -89,3 +91,24 @@ type Point2D = {
 ```
 
 Difference to interfaces: you cannot add additional properties into variables with the above types.
+
+## Generics
+
+You can create more specific types by using Generics.
+
+```ts
+class LinkedList<T> {
+  
+  constructor(
+    public item: T,
+    public next?: LinkedList<T>
+  ) {}
+}
+```
+
+The example above also shows a shorthand syntax for constructor parameters which are automatically assigned to properties of the class named accordingly (like `this.item = item;`).
+
+## Hiding implementation details inside classes
+
+Like in Java and similar object-oriented programming languages, you can specify
+the visibility of a class property via `public`, `private`, `protected`.

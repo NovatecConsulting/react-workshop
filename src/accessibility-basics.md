@@ -7,7 +7,7 @@ tags: en
 ---
 # Accessibility Basics
 
-Users of the web can have several impairments. This can be a temporary like a broken arm, situational like using a small screen, or a permanent impairment, for example blindness.
+Users of the web can have several impairments. This can be temporary like a broken arm, situational like using a small screen, or a permanent impairment, for example blindness.
 
 In order to build the web app in an inclusive way, there are several points to be taken care of:
 
