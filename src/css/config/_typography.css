@@ -59,8 +59,9 @@ code:not([class]) {
 }
 
 article a:not([class]) {
-  border-radius: .25rem;
-  padding: 0 .25rem;
+  border-radius: .25em;
+  padding: 0 .25em;
+  margin: 0 -.25em;
   color: var(--link-fg);
   text-decoration: none;
 }

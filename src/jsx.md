@@ -8,7 +8,7 @@ tags: en
 
 # JSX
 
-JSX is a syntax extension to JavaScript that enables declarative way to build UI components.
+JSX is a syntax extension to JavaScript that enables a declarative way to build UI components.
 It is transformed into valid JavaScript. 
 
 You can write markup directly inside JavaScript.
@@ -37,7 +37,7 @@ However, one common pitfall is the fact that some are named differently, eg. `cl
 
 ## Rendering JSX
 
-In order to render JSX elements, you will need a root element where the JSX will be inserted:
+In order to render JSX elements, you will need a root element where the JSX will be inserted. Next to React, a second library, ReactDOM comes into play. ReactDOM keeps the contents of the JSX (which is the representation of the UI of the application) in a Virtual DOM tree. The ReactDOM library keeps the browser's DOM in sync with the Virtual DOM. 
 
 ```html
 <div id="root"></div>
