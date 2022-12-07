@@ -15,7 +15,7 @@ Also, this helps designers to have an overview of all implementations of compone
 
 - [https://storybook.js.org](https://storybook.js.org)
 - [In depth guide with React](https://storybook.js.org/docs/react/get-started/introduction)
-  
+
 Storybook can work with various web frameworks. Besides pure HTML5, it also supports Angular, Vue, Svelte and React.
  
 ## Getting Started with Storybook and React

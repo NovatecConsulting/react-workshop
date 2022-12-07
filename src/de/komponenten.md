@@ -2,7 +2,7 @@
 title: Komponenten
 layout: layouts/article.njk
 description: Einführung in Komponenten in React
-level: intermediate
+level: beginner
 ---
 # Komponenten
 

@@ -4,5 +4,5 @@ module.exports = {
   url: process.env.URL || "",
   siteName: "React Course",
   copyright:
-    'Made with <span role="img" tabindex="-1" aria-label="love">💖</span> by the Frontend Guild at Novatec Consulting GmbH',
+    'Made with <span aria-hidden="true">💖</span><span class="visually-hidden">love</span> by the Frontend Guild at Novatec Consulting GmbH',
 };

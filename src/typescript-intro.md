@@ -94,7 +94,7 @@ Difference to interfaces: you cannot add additional properties into variables wi
 
 ## Generics
 
-You can create more specific types by using Generics.
+You can create generic types by using angle brackets.
 
 ```ts
 class LinkedList<T> {
@@ -104,6 +104,12 @@ class LinkedList<T> {
     public next?: LinkedList<T>
   ) {}
 }
+```
+
+Specific types can then be instantiated like this:
+```ts
+const listOfNumbers = new LinkedList<number>();
+const listOfStrings = new LinkedList<string>();
 ```
 
 The example above also shows a shorthand syntax for constructor parameters which are automatically assigned to properties of the class named accordingly (like `this.item = item;`).
