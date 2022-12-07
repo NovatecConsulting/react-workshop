@@ -9,12 +9,15 @@ level: get-started
 
 Dies ist eine kurze Zusammenfassung der Sprache TypeScript für alle, die mit JavaScript vertraut sind.
 
-Ein ausführliches Tutorial zu TypeScript und seiner Typennotation finden Sie unter 
+Ein ausführliches Tutorial zu TypeScript und der Type Notation findest du hier:
 [https://2ality.com/2018/04/type-notation-typescript.html](https://2ality.com/2018/04/type-notation-typescript.html)
+
+Sieh dir auch die offizielle Dokumentation an: [https://www.typescriptlang.org/](https://www.typescriptlang.org/)
 
 ## TypeScript Playground
 
-Der beste Weg, einen schnellen Einstieg in TypeScript zu bekommen, ist, sich einige Beispiele anzusehen und sie direkt im Browser auszuprobieren.
+Der beste Weg, um eine schnelle Einführung in TypeScript zu bekommen, ist, sich einige Beispiele anzusehen und sie direkt im Browser auszuprobieren.
+
 TypeScript hat einen Playground und bietet auch eine Reihe von Beispielen.
 
 [https://www.typescriptlang.org/play](https://www.typescriptlang.org/play)
@@ -25,40 +28,40 @@ JavaScript hat nur 8 Typen:
 
 - `undefined`
 - `null`
-- `boolean`: true oder false
-- `number`: Zahlen
+- `boolean`: true or false
+- `number`: Zahlen (Fließkommazahlen und Ganzzahlen)
 - `string`: Zeichenketten
-- `BigInt`: sehr große Ganzzahlen (für die `number` unzureichend ist)
+- `BigInt`: Sehr große ganze Zahlen
 - `Symbol`: Symbole
-- `Object`: alle Objekte, darunter auch Funktionen und Arrays
+- `Object`: alle Objekte, auch Funktionen und Arrays
 
-## Statische Typisierung in TypeScript
+## Statische Typen in TypeScript
 
-Zusätzlich zu den Typen in JavaScript fügt TypeScript statische Typen hinzu, die bei der Kompilierung überprüft werden.
+Zusätzlich zu den Typen in JavaScript fügt TypeScript statische Typen hinzu, die beim Kompilieren geprüft werden.
 
-Diese zusätzlichen Prüfungen helfen dabei, häufige Fehler zu vermeiden, z.B. erinnert es Sie daran, auf `undefined` zu prüfen.
-Außerdem liefert es einige zusätzliche Informationen, die den AutoVervollständigungsfunktionen in der IDE zugute kommen.
+Diese zusätzlichen Prüfungen helfen, häufige Fehler zu vermeiden, z.B. erinnern sie dich daran, auf `undefined` zu prüfen.
+Außerdem liefert es zusätzliche Informationen, die der Autovervollständigung in der IDE zugute kommen.
 
-## Type annotations
+## Typ-Kennzeichnung
 
 ```ts
 let x: string;
 ```
 
-## Type inference
+## Abgeleitete Typen
 
 ```ts
-let x = "Hello world"; // inferred type of x is string
+let x = "Hello world"; // abgeleiteter Typ von x ist string
 ```
 
-## Type aliases
+## Typ-Aliase
 
 ```ts
 type Age = number;
 const age: Age = 82;
 ```
 
-## Typed Arrays
+## Typisierte Arrays
 
 ```ts
 const names: string[] = ['Greg', 'John', 'Paul']; 
@@ -66,19 +69,19 @@ const names: string[] = ['Greg', 'John', 'Paul'];
 const names: Array<string> = ['Greg', 'John', 'Paul'];
 ```
 
-## Interfaces
+## Schnittstellen
 
-Es gibt in TypeScript das Konzept von Schnittstellen, um ein Objekt zu beschreiben:
+Du kannst Schnittstellen nutzen, um ein Objekt zu beschreiben.
 
 ```ts
 interface Point {
   x: number;
   y: number;
-  z?: number; // z is an optional property
+  z?: number; // z ist eine optionale Eigenschaft
 }
 ```
 
-## Object literal types
+## Objektliterale Typen
 
 ```ts
 type Point2D = {
@@ -87,4 +90,31 @@ type Point2D = {
 }
 ```
 
-Unterschied zu Schnittstellen: Es können keine zusätzlichen Eigenschaften in Variablen mit den oben genannten Typen hinzugefügt werden.
+Unterschied zu Schnittstellen: Du kannst keine zusätzlichen Eigenschaften in Variablen mit den oben genannten Typen hinzufügen.
+
+## Generische Typen
+
+Du kannst generische Typen (Generics) erstellen, indem du spitze Klammern verwendest:
+
+```ts
+class LinkedList<T> {
+  
+  constructor(
+    public item: T,
+    public next?: LinkedList<T>
+  ) {}
+}
+```
+
+Daraus können dann spezifische Typen abgeleitet werden:
+```ts
+const listOfNumbers = new LinkedList<number>();
+const listOfStrings = new LinkedList<string>();
+```
+
+Das obige Beispiel zeigt auch eine Kurzsyntax für Konstruktorparameter, die automatisch den entsprechend benannten Eigenschaften der Klasse zugewiesen werden (wie `this.item = item;`).
+
+## Implementierungsdetails in Klassen verstecken
+
+Wie in Java und ähnlichen objektorientierten Programmiersprachen kannst du die
+die Sichtbarkeit einer Klasseneigenschaft über `public`, `private`, `protected` festlegen.

@@ -2,6 +2,7 @@
   "tags": "de",
   "meta": {
     "siteName": "React-Kurs",
-    "lang": "de"
+    "lang": "de",
+    "copyright": "Gebaut mit <span aria-hidden=\"true\">💖</span><span class=\"visually-hidden\">Herz</span> von der Frontend Gilde der Novatec Consulting GmbH"
   }
 }
