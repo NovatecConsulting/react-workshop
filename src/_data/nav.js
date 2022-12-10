@@ -2,7 +2,7 @@ module.exports = {
   en: {
     header: [
       {
-        title: "Home",
+        title: "Overview",
         href: "/",
       },
       {
@@ -24,7 +24,7 @@ module.exports = {
   de: {
     header: [
       {
-        title: "Start",
+        title: "Übersicht",
         href: "/de",
       },
       {

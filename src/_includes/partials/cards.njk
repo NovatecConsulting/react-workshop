@@ -13,9 +13,6 @@
       <article class="card">
         <header class="card__header">
           <h3>{{ item.data.title }}</h3>
-          {% if item.data.level %}
-            <div class="chip">{{ item.data.level.replace('-', ' ') }}</div>
-          {% endif %}
         </header>
         <p>{{ item.data.description }}</p>
         <div class="card__bottom">

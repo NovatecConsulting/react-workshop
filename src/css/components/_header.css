@@ -9,11 +9,15 @@
 }
 
 .header__logo {
+  padding: 1rem;
+  border-radius: 4px;
+  flex: 0 0 auto;
+}
+
+.header__logo svg {
   display: block;
   width: 128px;
   height: 30px;
-  border-radius: 4px;
-  flex: 0 0 auto;
 }
 
 .header__title {

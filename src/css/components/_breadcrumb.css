@@ -10,13 +10,14 @@
 
 .breadcrumb li {
   background: var(--link-hover-bg);
+  min-height: var(--step-0);
   padding: .5rem 1.5rem;
   border-radius: .25rem;
   position: relative;
 }
 
 .breadcrumb li:first-child {
-  padding: .5rem 1.5rem .5rem .5rem;
+  padding-left: .5rem;
 }
 
 .breadcrumb li:not(:first-child)::before {
@@ -43,13 +44,20 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 100% 50%, 0 0);
 }
 
-
-
 .breadcrumb a {
-  display: block;
+  display: flex;
+  height: 100%;
+  gap: .25rem;
+  align-items: center;
   color: var(--link-fg);
   border-radius: .25rem;
   text-decoration: none;
+
+}
+
+.breadcrumb svg {
+  display: none;
+  height: var(--step-0);
 }
 
 .breadcrumb a:hover {
@@ -57,3 +65,34 @@
   text-decoration: underline;
 }
 
+@media screen and (max-width: 768px) {
+
+  .breadcrumb li {
+    padding: .75rem 1.5rem;
+  }
+
+  .breadcrumb svg {
+    display: block;
+  }
+
+  .breadcrumb li:first-child span {
+    position: absolute;
+    font-size: 1px;
+    clip-path: path('M0 0');
+    width: 0;
+    height: 0;
+  }
+
+  .breadcrumb li:nth-child(2):not(:last-of-type) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 564px) {
+  .breadcrumb a span {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
