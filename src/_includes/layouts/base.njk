@@ -14,7 +14,12 @@
   {% include "partials/header.njk" %}
   
   {% block content %}
-  <main id="main" class="flow">{{ content | safe }}</main>
+  <main id="main">
+    {% include "partials/breadcrumb.njk" %}
+    <article id="main-content" class="flow">  
+    {{ content | safe }}
+    </article>
+  </main>
   {% endblock %}
   
   {% include "partials/footer.njk" %}

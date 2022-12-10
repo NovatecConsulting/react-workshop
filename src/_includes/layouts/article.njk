@@ -7,7 +7,9 @@
 
 {% block content %}
 <main id="main" class="side-nav-layout">
-  {% include "partials/breadcrumb.njk" %}
+  {% block breadcrumb %}
+    {% include "partials/breadcrumb.njk" %}
+  {% endblock %}
   <article id="main-content" class="flow">
     {{ content | safe }}
   </article>
