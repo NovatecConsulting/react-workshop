@@ -12,6 +12,7 @@
 @import "./components/_button.css";
 @import "./components/_chip.css";
 @import "./components/_card.css";
+@import "./components/_breadcrumb.css";
 
 @import "./utils/_flow.css";
 @import "./utils/_visually-hidden.css";

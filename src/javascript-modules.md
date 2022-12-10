@@ -2,7 +2,7 @@
 title: JavaScript Modules
 layout: layouts/article.njk
 description: An in-depth guide to modules in JavaScript
-level: beginner
+level: prerequisites
 tags: en
 ---
 

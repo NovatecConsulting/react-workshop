@@ -1,5 +1,6 @@
 const { compressHTML } = require('./config/transforms');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const { sortByLevel, sortByOrder, sortCombine } = require('./config/collection-sort');
 
 module.exports = function (config) {
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
@@ -9,22 +10,12 @@ module.exports = function (config) {
   config.addPlugin(pluginSyntaxHighlight);
 
   config.addCollection('sortedEnglish', (collectionApi) => {
-    const levels = ['get-started', 'beginner', 'intermediate', 'advanced']
-    return collectionApi.getFilteredByTag('en').sort((a, b) => {
-      const aLevel = a.data.level ? levels.indexOf(a.data.level) : -1;
-      const bLevel = b.data.level ? levels.indexOf(b.data.level) : -1;
-      return aLevel - bLevel;
-    });
+    return collectionApi.getFilteredByTag('en').sort(sortCombine(sortByLevel, sortByOrder));
   });
 
 
   config.addCollection('sortedGerman', (collectionApi) => {
-    const levels = ['get-started', 'beginner', 'intermediate', 'advanced']
-    return collectionApi.getFilteredByTag('de').sort((a, b) => {
-      const aLevel = a.data.level ? levels.indexOf(a.data.level) : -1;
-      const bLevel = b.data.level ? levels.indexOf(b.data.level) : -1;
-      return aLevel - bLevel;
-    });
+    return collectionApi.getFilteredByTag('de').sort(sortCombine(sortByLevel, sortByOrder));
   });
 
   // Return your Object options:

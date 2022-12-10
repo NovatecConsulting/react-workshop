@@ -2,7 +2,7 @@
 layout: layouts/article.njk
 title: Accessibility Basics
 description: Brief introduction to accessibility on the web
-level: get-started
+level: prerequisites
 tags: en
 ---
 # Accessibility Basics

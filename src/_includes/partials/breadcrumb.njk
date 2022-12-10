@@ -1,0 +1,10 @@
+{% if meta.lang and level and levels[meta.lang][level] %}
+  {% set homeLink = nav[meta.lang].header[0] %}  
+  <nav class="breadcrumb | full-bleed">
+    <ul>
+      <li><a href="{{ meta.site.url }}{{ homeLink.href }}">{{ homeLink.title }}</a></li>
+      <li><a href="{{ meta.site.url }}{{ homeLink.href }}#{{ level }}">{{ levels[meta.lang][level].title }}</a></li>
+      <li><a href="{{ meta.site.url }}{{ page.url }}">{{ title }}</a></li>
+    <ul>
+  </nav>
+{% endif %}

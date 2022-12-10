@@ -16,7 +16,8 @@
   background-clip: padding-box;
 }
 
-.card h2 {
+.card h2,
+.card h3 {
   color: var(--card-headline);
   font-size: var(--step-1);
 }

@@ -2,7 +2,7 @@
 title: Setup a local development environment
 layout: layouts/article.njk
 description: Instructions for setting up a local development environment.
-level: get-started
+level: prerequisites
 tags: en
 ---
 
@@ -76,15 +76,3 @@ If you did something terribly wrong, check out [https://ohshitgit.com](https://o
 npm install
 npm run dev
 ```
-
-## Creating a new React project
-
-```sh
-# Create a Vite React App
-npm create vite@latest my-react-app -- --template react
-
-# Create a Vite React App with TypeScript
-npm create vite@latest my-react-app -- --template react-ts
-```
-
-In-depth guide on [vitejs.dev](https://vitejs.dev).

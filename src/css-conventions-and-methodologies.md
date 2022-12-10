@@ -2,7 +2,7 @@
 title: CSS Conventions and Methodologies
 layout: layouts/article.njk
 description: CSS conventions and methodologies for writing robust and maintainable web applications
-level: beginner
+level: prerequisites
 tags: en
 ---
 
