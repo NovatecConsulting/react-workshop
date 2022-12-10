@@ -5,6 +5,7 @@ const { sortByLevel, sortByOrder, sortCombine } = require('./config/collection-s
 module.exports = function (config) {
   // Tell 11ty to use the .eleventyignore and ignore our .gitignore file
   config.setUseGitIgnore(false);
+  config.addPassthroughCopy('./src/favicon');
   config.addWatchTarget('./src/_includes/css');
   config.addTransform('compressHTML', compressHTML);
   config.addPlugin(pluginSyntaxHighlight);
@@ -12,7 +13,6 @@ module.exports = function (config) {
   config.addCollection('sortedEnglish', (collectionApi) => {
     return collectionApi.getFilteredByTag('en').sort(sortCombine(sortByLevel, sortByOrder));
   });
-
 
   config.addCollection('sortedGerman', (collectionApi) => {
     return collectionApi.getFilteredByTag('de').sort(sortCombine(sortByLevel, sortByOrder));
