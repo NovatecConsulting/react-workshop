@@ -3,6 +3,7 @@ title: Styling in React
 layout: layouts/article.njk
 description: Ein Überblick über die Styling-Konzepte in React
 level: beginner
+order: 2
 ---
 # Styling in React
 

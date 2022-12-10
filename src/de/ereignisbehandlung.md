@@ -3,6 +3,7 @@ title: Ereignisbehandlung
 description: Behandlung von Ereignissen innerhalb von React-Komponenten
 layout: layouts/article.njk
 level: beginner
+order: 3
 ---
 
 # Umgang mit Ereignissen

@@ -2,7 +2,7 @@
 layout: layouts/article.njk
 title: TypeScript-Crashkurs
 description: Eine kurze Zusammenfassung der Sprache TypeScript für alle, die mit JavaScript vertraut sind.
-level: get-started
+level: prerequisites
 ---
 
 # TypeScript-Crashkurs

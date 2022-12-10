@@ -2,7 +2,7 @@
 title: Paketverwaltung in JavaScript
 layout: layouts/article.njk
 description: Tools für die Paketverwaltung im JavaScript-Ökosystem
-level: beginner
+level: prerequisites
 ---
 
 # Paketmanager für JavaScript

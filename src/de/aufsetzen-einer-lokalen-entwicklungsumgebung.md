@@ -2,7 +2,7 @@
 title: Aufsetzen einer lokalen Entwicklungsumgebung
 layout: layouts/article.njk
 description: Ein Leitfaden zur Einrichtung einer lokalen Entwicklungsumgebung
-level: get-started
+level: prerequisites
 ---
 
 # Aufsetzen einer lokalen Entwicklungsumgebung
@@ -75,15 +75,3 @@ If you did something terribly wrong, check out [https://ohshitgit.com](https://o
 npm install
 npm run dev
 ```
-
-## Ein neues React-Projekt erstellen
-
-```sh
-# Create a Vite React App
-npm create vite@latest my-react-app -- --template react
-
-# Create a Vite React App with TypeScript
-npm create vite@latest my-react-app -- --template react-ts
-```
-
-Ausführlicher Guide auf [vitejs.dev](https://vitejs.dev).

@@ -3,6 +3,7 @@ title: Arrays in JSX
 layout: layouts/article.njk
 description: Was gibt es zur Darstellung von Array-Daten in JSX zu beachten?
 level: beginner
+order: 1
 ---
 
 # Arrays in JSX
