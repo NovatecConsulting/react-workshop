@@ -3,6 +3,7 @@ title: JSX
 layout: layouts/article.njk
 description: Intro to JSX, a syntax extension to JavaScript
 level: beginner
+order: 1
 tags: en
 ---
 

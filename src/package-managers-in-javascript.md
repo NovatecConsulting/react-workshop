@@ -2,7 +2,7 @@
 title: Package Managers in JavaScript
 layout: layouts/article.njk
 description: Information about various package managers in JavaScript
-level: beginner
+level: prerequisites
 tags: en
 ---
 

@@ -3,12 +3,16 @@
   {% set learnMore = "mehr dazu" %}
 {% endif %}
 
-<ul class="list-none auto-grid my-4">
+{% for level in levels.levels %}
+  <h2 id="{{ level }}">{{ levels[meta.lang][level].title }}</h2>
+  <p>{{ levels[meta.lang][level].description }}</p>
+  <ul class="list-none auto-grid my-4">
   {% for item in cardCollection %}
+    {% if item.data.level == level %}
     <li>
       <article class="card">
         <header class="card__header">
-          <h2>{{ item.data.title }}</h2>
+          <h3>{{ item.data.title }}</h3>
           {% if item.data.level %}
             <div class="chip">{{ item.data.level.replace('-', ' ') }}</div>
           {% endif %}
@@ -19,5 +23,7 @@
         </div>
       </article>
     </li>
+    {% endif %}
   {% endfor %}
-</ul>
+  </ul>
+{% endfor %}

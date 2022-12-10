@@ -3,7 +3,7 @@ title: Semantic HTML
 layout: layouts/article.njk
 description: Introduction to semantic HTML.
 tags: en
-level: get-started
+level: prerequisites
 ---
 # Semantic HTML
 

@@ -3,6 +3,7 @@ title: Components
 layout: layouts/article.njk
 description: Introduction to components in React
 level: beginner
+order: 2
 tags: en
 ---
 

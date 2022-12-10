@@ -3,7 +3,7 @@ layout: layouts/article.njk
 title: TypeScript introduction
 description: A quick summary of the TypeScript language for people familiar with JavaScript.
 tags: en
-level: get-started
+level: prerequisites
 ---
 
 # TypeScript introduction

@@ -15,7 +15,7 @@
     grid-column: 1 / 4;
   }
 
-  .side-nav-layout > nav {
+  .side-nav-layout > .side-nav {
     grid-column: 4 / 5;
   }
 
