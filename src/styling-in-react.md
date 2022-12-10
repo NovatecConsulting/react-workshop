@@ -4,6 +4,7 @@ layout: layouts/article.njk
 description: In this article we'll provide an overview to styling concepts in React
 level: beginner
 tags: en
+order: 4
 ---
 # Styling in React
 

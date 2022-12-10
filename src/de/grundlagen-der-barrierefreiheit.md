@@ -2,7 +2,7 @@
 layout: layouts/article.njk
 title: Grundlagen der Barrierefreiheit
 description: Kurze Einführung in die Barrierefreiheit im Internet.
-level: get-started
+level: prerequisites
 ---
 # Grundlagen der Barrierefreiheit
 

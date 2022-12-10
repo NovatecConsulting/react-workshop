@@ -2,7 +2,7 @@
 title: JavaScript Module
 layout: layouts/article.njk
 description: Ein Einblick in Modulsysteme in JavaScript
-level: beginner
+level: prerequisites
 ---
 
 # JavaScript-Module

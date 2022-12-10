@@ -41,13 +41,13 @@ module.exports = {
     },
     beginner: {
       level: 'beginner',
-      title: 'Einsteiger*in',
+      title: 'Einstieg',
       description: 'In diesem Kapitel lernst du grundlegende Konzepte von React kennen, wie Komponenten und Eigenschaften, die die Bausteine einer React-Anwendung sind.'
     },
     intermediate: {
       level: 'intermediate',
       title: 'Mittel',
-      description: 'Weitere React-Konzepte auf dem Weg von der Einsteiger*in zur fortgeschrittenen React-Entwickler*in.',
+      description: 'Weitere React-Konzepte auf dem Weg vom Einstieg zur fortgeschrittenen React-Entwicklung.',
     },
     advanced: {
       level: 'advanced',

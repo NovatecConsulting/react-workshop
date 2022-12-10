@@ -2,7 +2,7 @@
 title: Semantisches HTML
 layout: layouts/article.njk
 description: Einführung in semantisches HTML.
-level: get-started
+level: prerequisites
 ---
 # Semantisches HTML
 

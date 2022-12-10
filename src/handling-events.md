@@ -4,6 +4,7 @@ description: Handling events in React
 layout: layouts/article.njk
 level: beginner
 tags: en
+order: 5
 ---
 
 # Handling events

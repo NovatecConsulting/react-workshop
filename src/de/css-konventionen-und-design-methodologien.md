@@ -2,7 +2,7 @@
 title: CSS-Konventionen und Design-Methodiken
 layout: layouts/article.njk
 description: CSS-Konventionen und Design-Methodiken
-level: beginner
+level: prerequisites
 ---
 
 # CSS-Konventionen und Design-Methodiken
