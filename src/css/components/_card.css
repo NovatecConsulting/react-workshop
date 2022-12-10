@@ -7,13 +7,12 @@
 
   height: 100%;
   display: flex;
-  gap: .75rem;
+  gap: 1.5rem;
   flex-direction: column;
 }
 
 .card__header {
-  min-height: 7rem;
-  background-clip: padding-box;
+  min-height: calc(2.4 * var(--step-1));
 }
 
 .card h2,

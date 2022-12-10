@@ -3,6 +3,7 @@ title: Testing in React
 layout: layouts/article.njk
 description: Introduction to testing in React
 level: intermediate
+tags: en
 ---
 
 # Testing Frameworks
