@@ -1,16 +1,15 @@
 <nav class="breadcrumb | full-bleed">
   <ul>
     {% set homeLink = nav[meta.lang].header[0] %}
-    <li><a href="{{ meta.site.url }}{{ homeLink.href }}">
-      
+    <li><a href="{{ meta.url }}{{ homeLink.href }}">
       {% include "partials/house.svg" %}
       <span>{{ homeLink.title }}</span>
     </a></li>
     {% if level and levels[meta.lang][level] %}
-    <li><a href="{{ meta.site.url }}{{ homeLink.href }}#{{ level }}">{{ levels[meta.lang][level].title }}</a></li>
+    <li><a href="{{ meta.url }}{{ homeLink.href }}#{{ level }}">{{ levels[meta.lang][level].title }}</a></li>
     {% endif %}
     {% if page.url != "/" and page.url != "/de/" %}
-    <li><a href="{{ meta.site.url }}{{ page.url }}">
+    <li><a href="{{ meta.url }}{{ page.url }}">
       <span>{{ title }}</span></a></li>
     {% endif %}
   <ul>
