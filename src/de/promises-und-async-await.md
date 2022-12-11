@@ -96,7 +96,7 @@ const main = async () => {
 main();
 ```
 
-## Awaiting multiple promises in parallel
+## Mehrere Promises parallel abwarten
 
 Du kannst `await` mit `Promise.all` verwenden:
 
