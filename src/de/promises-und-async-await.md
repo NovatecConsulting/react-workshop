@@ -1,6 +1,6 @@
 ---
 layout: layouts/article.njk
-title: Promises and async await
+title: Promises und async/await
 description: Eine Einführung in das Promises-Muster in JavaScript
 level: prerequisites
 order: 8
