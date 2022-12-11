@@ -7,7 +7,8 @@ module.exports = function (config) {
   config.setUseGitIgnore(false);
   config.addPassthroughCopy('./src/favicon');
   config.addWatchTarget('./src/_includes/css');
-  config.addTransform('compressHTML', compressHTML);
+  // TODO: try to figure out why that fails?
+  // config.addTransform('compressHTML', compressHTML);
   config.addPlugin(pluginSyntaxHighlight);
 
   config.addCollection('sortedEnglish', (collectionApi) => {
