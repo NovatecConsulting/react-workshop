@@ -1,4 +1,4 @@
-const { compressHTML } = require('./config/transforms');
+// const { compressHTML } = require('./config/transforms');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const { sortByLevel, sortByOrder, sortCombine } = require('./config/collection-sort');
 
