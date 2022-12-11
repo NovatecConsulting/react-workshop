@@ -82,13 +82,14 @@
     width: 0;
     height: 0;
   }
-
-  .breadcrumb li:nth-child(2):not(:last-of-type) {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 564px) {
+  
+  .breadcrumb li:nth-child(2):not(:last-of-type) {
+    display: none;
+  }
+
   .breadcrumb a span {
     max-width: 120px;
     overflow: hidden;
