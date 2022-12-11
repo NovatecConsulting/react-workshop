@@ -19,6 +19,24 @@ const Header = ({title, subTitle}) => (
 );
 ```
 
+Diese Komponenten können dann in anderen Komponenten verwendet werden.
+Die oberste Komponente einer React-Anwendung wird oft `<App />`-Komponente genannt.
+
+Eine typische Struktur könnte wie folgt aussehen:
+
+```jsx
+const App = () => ( 
+  <>
+    <Header title="Hello World" subTitle="This is my app" />
+    <MainContent />
+    <Footer />
+  </>
+);
+
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
+```
+
 ## Klassenbasierte Komponenten
 
 Neben den funktionalen Komponenten gibt es auch klassenbasierte Komponenten. 

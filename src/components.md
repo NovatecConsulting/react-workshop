@@ -22,6 +22,24 @@ const Header = ({title, subTitle}) => (
 );
 ```
 
+These components can then be used in other components.
+The topmost component of a React Application is often called `<App />` Component.
+
+A typical structure could look like this:
+
+```jsx
+const App = () => ( 
+  <>
+    <Header title="Hello World" subTitle="This is my app" />
+    <MainContent />
+    <Footer />
+  </>
+);
+
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
+```
+
 ## Class-Style Components
 
 In addition to functional components, there are class-style components. 
