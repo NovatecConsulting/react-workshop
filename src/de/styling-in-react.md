@@ -35,7 +35,7 @@ Du kannst Stile auch direkt über die Eigenschaft `style` auf eine Komponente an
 
 ``jsx
 const MyComponent = ({title, children}) => (
-  <div style={{borderRadius: '.25rem', border: '1px solid #ccc', padding: '1rem'}}>
+  <div style={% raw %}{{borderRadius: '.25rem', border: '1px solid #ccc', padding: '1rem'}}{% endraw %}>
     <h2>{title}</h2>
     {children}
   </div>
