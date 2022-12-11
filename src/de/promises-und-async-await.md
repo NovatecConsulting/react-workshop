@@ -26,8 +26,8 @@ wait(2000).then(() => {
 });
 ```
 
-Fehler in Versprechen werden über `.catch()` behandelt.
-Unten siehst du einen häufigen Anwendungsfall für Versprechen, nämlich das Abrufen von Daten:
+Fehler in Promises werden über `.catch()` behandelt.
+Unten siehst du einen häufigen Anwendungsfall für Promises, nämlich das Abrufen von Daten:
 
 ```js
 function fetchUsers() {
