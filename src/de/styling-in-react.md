@@ -29,6 +29,19 @@ const MyComponent = ({title, children}) => (
 );
 ```
 
+## Verwendung der Eigenschaft `style`
+
+Du kannst Stile auch direkt über die Eigenschaft `style` auf eine Komponente anwenden. Die Eigenschaft `style` nimmt ein Objekt mit CSS-Eigenschaften auf. CSS-Eigenschaften folgen dem Benennungsmuster des CSS-Objektmodells, das camelCase verwendet:
+
+``jsx
+const MyComponent = ({title, children}) => (
+  <div style={{borderRadius: '.25rem', border: '1px solid #ccc', padding: '1rem'}}>
+    <h2>{title}</h2>
+    {children}
+  </div>
+);
+```
+
 ## Styled components
 
 Ein anderer Ansatz ist die Verwendung einer Bibliothek namens [styled-components](https://styled-components.com/). Damit können Sie CSS direkt in JavaScript schreiben. 

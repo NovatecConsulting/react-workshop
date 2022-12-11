@@ -26,6 +26,19 @@ const MyComponent = ({title, children}) => (
 );
 ```
 
+## Using the `style` property
+
+You can also apply styles directly to a component via the `style` property. The `style` property takes an object of styles. CSS properties follow the naming pattern of the CSS Object model, which uses camelCase:
+
+```jsx
+const MyComponent = ({title, children}) => (
+  <div style={{borderRadius: '.25rem', border: '1px solid #ccc', padding: '1rem'}}>
+    <h2>{title}</h2>
+    {children}
+  </div>
+);
+```
+
 ## Styled components
 
 Another approach is to use a library called [styled-components](https://styled-components.com/). This enables you to write CSS directly in JavaScript. 
