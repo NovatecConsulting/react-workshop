@@ -22,7 +22,7 @@ const UserCard = ({name, role, imageSrc}) => (
 );
 ```
 
-## Komponenten-Props in TypeScript definieren
+## Props in TypeScript definieren
 
 Du kannst entweder einen `type` oder ein `interface` verwenden, um Komponenten-Eigenschaften zu definieren. Eine Schnittstelle kann mit weiteren Eigenschaften erweitert werden. Das kann für öffentliche APIs hilfreich sein, während ein `type` strikter ist.
 
@@ -50,7 +50,7 @@ Bevor TypeScript eingeführt wurde, gab es `PropTypes`, die Property Type Checks
 Diese Funktion wird heute kaum noch genutzt und ist nicht mehr in React enthalten. Es ist immer noch als 
 separates NPM-Paket verfügbar.
 
-## Common Property types
+## Spezielle Typen von Props
 
 Du kannst alles als Eigenschaft an eine Komponente übergeben. Neben primitiven Typen und typisierten Objekten kannst du auch
 JSX, CSS-Stile, Kind-Elemente und Callback-Funktionen übergeben:
