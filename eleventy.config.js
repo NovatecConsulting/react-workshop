@@ -1,4 +1,4 @@
-// const { compressHTML } = require('./config/transforms');
+const { compressHTML } = require('./config/transforms');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const { sortByLevel, sortByOrder, sortCombine } = require('./config/collection-sort');
 
@@ -7,8 +7,7 @@ module.exports = function (config) {
   config.setUseGitIgnore(false);
   config.addPassthroughCopy('./src/favicon');
   config.addWatchTarget('./src/_includes/css');
-  // TODO: try to figure out why that fails?
-  // config.addTransform('compressHTML', compressHTML);
+  config.addTransform('compressHTML', compressHTML);
   config.addPlugin(pluginSyntaxHighlight);
 
   config.addCollection('sortedEnglish', (collectionApi) => {

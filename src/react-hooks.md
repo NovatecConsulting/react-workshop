@@ -13,7 +13,7 @@ Before React 16.8, the only way of creating a stateful component was to create a
 
 ## useState Hook
 
-The first hook we learned about was the `useState` hook in the article about [Component State](component-state.md).
+The first hook we learned about was the `useState` hook in the article about [Component State](../component-state).
 
 ```jsx
 const myComponent = () => {
@@ -120,4 +120,4 @@ const MyComponent = () => {
 
 ## useContext hook
 
-The `useContext` api helps you to share state across components using the Context API. The context API is described within its own article: [Context API](context-api).
+The `useContext` api helps you to share state across components using the Context API. The context API is described within its own article: [Context API](../context-api).
