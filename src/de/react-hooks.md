@@ -12,7 +12,7 @@ Vor React 16.8 war die einzige Möglichkeit, eine zustandsbehaftete Komponente z
 
 ## useState Hook
 
-Der erste Hook, den wir kennengelernt haben, war der `useState`-Hook aus dem Artikel über [Zustandsbehaftete Komponenten](zustandsbehaftete-komponenten.md).
+Der erste Hook, den wir kennengelernt haben, war der `useState`-Hook aus dem Artikel über [Zustandsbehaftete Komponenten](../zustandsbehaftete-komponenten).
 
 ```jsx
 const myComponent = () => {
@@ -120,4 +120,4 @@ const MyComponent = () => {
 
 ## useContext hook
 
-Die "useContext"-Api hilft dabei, einen globalen Anwendungszustand über die Context-API zwischen Komponenten zu teilen. Die Kontext-API wird in einem eigenen Artikel beschrieben: [Die Context API](die-context-api).
+Die "useContext"-Api hilft dabei, einen globalen Anwendungszustand über die Context-API zwischen Komponenten zu teilen. Die Kontext-API wird in einem eigenen Artikel beschrieben: [Die Context API](../die-context-api).
