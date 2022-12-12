@@ -33,7 +33,7 @@ const MyComponent = ({title, children}) => (
 
 Du kannst Stile auch direkt über die Eigenschaft `style` auf eine Komponente anwenden. Die Eigenschaft `style` nimmt ein Objekt mit CSS-Eigenschaften auf. CSS-Eigenschaften folgen dem Benennungsmuster des CSS-Objektmodells, das camelCase verwendet:
 
-``jsx
+```jsx
 const MyComponent = ({title, children}) => (
   <div style={% raw %}{{borderRadius: '.25rem', border: '1px solid #ccc', padding: '1rem'}}{% endraw %}>
     <h2>{title}</h2>
