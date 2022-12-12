@@ -133,6 +133,8 @@ It is transformed into valid JavaScript.</p>
 <h2>JSX Attributes</h2>
 <p>You can use attributes just like in HTML or assign JavaScript expressions via curly braces to it.</p>
 <p>However, one common pitfall is the fact that some are named differently, eg. <code>className</code> instead of <code>class</code> because it is a reserved keyword in JavaScript. Also, the attributes follow the camelCase notation (eg. <code>tabIndex</code>)  which is a common naming convention for variables in JavaScript.</p>
+<h2>JSX Fragments</h2>
+<p>You can use empty tags <code>&lt;&gt;</code> and <code>&lt;/&gt;</code> to group multiple elements in one Fragment without using a further DOM element.</p>
 <h2>Rendering JSX</h2>
 <p>In order to render JSX elements, you will need a root element where the JSX will be inserted. Next to React, a second library, ReactDOM comes into play. ReactDOM keeps the contents of the JSX (which is the representation of the UI of the application) in a Virtual DOM tree. The ReactDOM library keeps the browser's DOM in sync with the Virtual DOM.</p>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>root<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
