@@ -35,6 +35,9 @@ You can use attributes just like in HTML or assign JavaScript expressions via cu
 
 However, one common pitfall is the fact that some are named differently, eg. `className` instead of `class` because it is a reserved keyword in JavaScript. Also, the attributes follow the camelCase notation (eg. `tabIndex`)  which is a common naming convention for variables in JavaScript.
 
+## JSX Fragments
+
+You can use empty tags `<>` and `</>` to group multiple elements in one Fragment without using a further DOM element.
 
 ## Rendering JSX
 

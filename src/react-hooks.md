@@ -22,7 +22,7 @@ const myComponent = () => {
     <>
       <div>{{counter}}</div>
       <button onClick={() => setCounter(counter => counter + 1)}> Increase</button>
-    <>
+    </>
   );
 };
 ```
@@ -66,7 +66,7 @@ const MyComponent = () => {
     </> :
     <>
       <div>Loading</div>
-    <>
+    </>
   );
 };
 ```

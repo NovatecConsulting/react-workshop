@@ -16,7 +16,7 @@ Functional Components are the most commonly used components in React.
 ```jsx
 const Header = ({title, subTitle}) => (
   <header>
-    <h1>{title}</p>
+    <h1>{title}</h1>
     <p>{subTitle}</p>
   </header>
 );

@@ -35,6 +35,9 @@ Sie können Attribute wie in HTML verwenden oder JavaScript-Ausdrücke über ges
 
 Ein häufiger Fallstrick ist jedoch die Tatsache, dass einige Attribute anders benannt sind, z. B. `className` statt `class`, da `class` ein reserviertes Schlüsselwort in JavaScript ist. Außerdem folgen die Attribute der camelCase-Schreibweise (z. B. `tabIndex`). camelCase ist eine gängige Namenskonvention für Variablen in JavaScript.
 
+## JSX-Fragmente
+
+Du kannst leere Tags `<>` und `</>` verwenden, um mehrere Elemente in einem Fragment zu gruppieren, ohne ein weiteres DOM-Element zu verwenden.
 
 ## Rendern von JSX
 
